@@ -1,5 +1,7 @@
 #!/bin/bash
 
+hash youtube-dl 2>/dev/null || { echo >&2 "Please install youtube-dl"; exit 1; }
+hash ffmpeg 2>/dev/null || { echo >&2 "Please install ffmpeg"; exit 1; }
 stitch_string=''
 for i in `seq 1640 1720`;
 do
