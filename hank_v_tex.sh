@@ -9,3 +9,4 @@ done
 
 cat $stitch_string > HankVTex.ts
 ffmpeg -i HankVTex.ts -acodec copy -vcodec copy HankVTex.mp4
+rm *.ts
